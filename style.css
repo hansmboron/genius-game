@@ -1,0 +1,84 @@
+/* body {
+    margin: 0;
+    background-color: rgb(208, 255, 239);
+} */
+
+.main-game {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+}
+
+.score {
+    text-align: center;
+    font-size: medium;
+    padding-bottom: .5rem;
+}
+.message {
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    color: green;
+    padding-top: .4rem;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border: 1px solid #fff;
+    border-bottom-right-radius: 100%;
+}
+
+.blue:hover {
+    background-color: rgba(0, 0, 255, 0.85);
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border: 1px solid #fff;
+    border-top-right-radius: 100%;
+}
+
+.red:hover {
+    background-color: rgba(255, 0, 0, 0.85);
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 100%;
+}
+
+.yellow:hover {
+    background-color: rgba(255, 255, 0, 0.85);
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border: 1px solid #fff;
+    border-top-left-radius: 100%;
+}
+
+.green:hover {
+    background-color: rgba(0, 128, 0, 0.9);
+}
+
+.selected {
+    opacity: 0.2;
+    border: 1px solid #000;
+}
